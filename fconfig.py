@@ -20,6 +20,6 @@ class Config:
             if line.startswith(configProperty):
                 configValue = line.split("=")[1]
 
-                return configProperty
+                return configValue
             
         return None
