@@ -14,6 +14,8 @@ class Config:
             self.configFile.close()
         else:
             Exception("FConfig: Config file does not exist")
+            
+        return None
 
     def get(self, configProperty: str):
         for line in self.configText.splitlines():
